@@ -1,2 +1,12 @@
-package top.whyh.controller;public class TestController {
+package top.whyh.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping
+public class TestController {
+    @GetMapping("/test")
+    public String test() {
+        return "Hello Spring Security";
+    }
 }
